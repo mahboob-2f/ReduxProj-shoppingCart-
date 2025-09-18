@@ -1,14 +1,12 @@
- 
+import Counter from "./components/Counter"
 
 function App() {
  
 
   return (
-    <>
-      <div>
-        hello ghost
-      </div>
-     </>
+    <div>
+      <Counter/>
+    </div>
   )
 }
 
