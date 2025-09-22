@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
 
 export default function Product({post}) {
     const [selected,setSelected] = useState(false);
 
     const description = post.description.substr(0,67);
+    const {cart} = useSelector((state)=>state)
 
   return (
     <div>
@@ -17,7 +19,8 @@ export default function Product({post}) {
         <div>
             <p>${post.price}</p>
             <button>
-              {  !selected ? <p>Add to cart</p> : <p>Remove item</p>}
+            {/*       here to start  */}
+              
             </button>
         </div>
 

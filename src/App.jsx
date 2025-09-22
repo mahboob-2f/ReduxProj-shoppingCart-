@@ -1,7 +1,7 @@
 import { Navbar } from "./components/Navbar"
 import {Routes,Route} from 'react-router-dom'
 import Home from "./pages/Home"
-import Cart from "./pages/Cart"
+import Cart from "./pages/cart"
 import NotFound from "./components/NotFound"
 
 function App() {
