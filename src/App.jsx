@@ -3,6 +3,7 @@ import {Routes,Route} from 'react-router-dom'
 import Home from "./pages/Home"
 import Cart from "./pages/cart"
 import NotFound from "./components/NotFound"
+import Toaster from 'react-hot-toast'
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
         <Route path="/cart" element={<Cart/>}></Route>
         <Route path="*" element={<NotFound/>}></Route>
       </Routes>
+
+
+      <Toaster/>
     </div>
   )
 }
