@@ -3,7 +3,8 @@ import {Routes,Route} from 'react-router-dom'
 import Home from "./pages/Home"
 import Cart from "./pages/cart"
 import NotFound from "./components/NotFound"
-import Toaster from 'react-hot-toast'
+import {ToastContainer} from 'react-toastify'
+
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
       </Routes>
 
 
-      <Toaster/>
+     <ToastContainer/>
     </div>
   )
 }

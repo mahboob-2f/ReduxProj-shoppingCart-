@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { remove } from '../redux/slices/Cartslice';
-import toast from 'react-hot-toast';
+import { remove,add } from '../redux/slices/Cartslice';
+import { toast } from 'react-toastify';
 
 export default function Product({post}) {
     const [selected,setSelected] = useState(false);
@@ -12,12 +12,18 @@ export default function Product({post}) {
     const dispatch = useDispatch();
     const addToCart = ()=>{
         dispatch(add(post));
-        toast.success("item added");
+        toast.success("item removed",{
+            position:"top-center",
+            autoClose:1000
+        });
     }
 
     const removeFromCart = ()=>{
         dispatch(remove(post.id));
-        toast.success("item removed")
+        toast.error("item removed",{
+            position:"top-center",
+            autoClose:1000
+        });
     }
   return (
     <div>

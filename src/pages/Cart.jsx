@@ -41,7 +41,8 @@ const Cart = () => {
             <NavLink to='/'>
               <button>
                 Shop Now
-              </button></NavLink>
+              </button>
+             </NavLink>
           </div>
         )
       }
