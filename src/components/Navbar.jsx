@@ -26,7 +26,13 @@ export const Navbar = () => {
             <li className='text-[16px] font-semibold '>Home</li>
             </NavLink>
           <NavLink to='/cart'>
-            <div>{count}</div>
+            {
+              count > 0 ?(
+                <p>{count}</p>
+              ):(
+                <p></p>
+              )
+            }
             <li ><FaShoppingCart  className='text-2xl'/> </li>
             </NavLink>         
           </nav>
